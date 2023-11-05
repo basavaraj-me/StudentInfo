@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 
 export default function Home() {
     const [users, setUsers] = useState([])
-
+// eslint-disable-next-line
     const {id} = useParams() 
     
     useEffect(()=>{
@@ -39,7 +39,7 @@ export default function Home() {
                         users.map((user,index) => (
                             <tr>
                             <th scope="row" key={index}>
-                                {index + 1}
+                                {index+1}
                             </th>
                             <td>{user.name}</td>
                             <td>{user.username}</td>
